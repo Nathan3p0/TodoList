@@ -1,11 +1,21 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
 }
 
 #container {
-    background: gray;
+    /* background: gray; */
     width: 360px;
     margin: 0 auto;
+    border: 2px solid gray;
+}
+
+.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul {
+    list-style-type: none;
 }
