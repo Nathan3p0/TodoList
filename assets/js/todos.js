@@ -29,7 +29,7 @@ function addToDo(){
         //Checks to make sure enter key is pressed and input is not empty
         if(event.which === 13 && todo !== '') {
             //adds new list item to end of ul
-            $('ul').append(`<li><span>X</span> ${todo}</li>`);
+            $('ul').append(`<li><span><i class="fa fa-trash"></i></span> ${todo}</li>`);
             //resets input field
             $(this).val('');
         }
@@ -37,8 +37,15 @@ function addToDo(){
     })
 };
 
+function toggleInput(){
+    $("h1 .fa-plus").on('click', function(){
+        $('input[type="text"]').fadeToggle();
+    })
+}
+
 
 // Invoking Functions
+toggleInput();
 addToDo();
 checked();
 deleted();
